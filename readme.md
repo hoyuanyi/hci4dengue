@@ -1,6 +1,6 @@
 # DengueIt
 
-### Team Member ###
+### Team Members ###
 1. Chua Yu Cong, Joel
 2. Ho Yuan Yi
 3. Lee Jia Ming
