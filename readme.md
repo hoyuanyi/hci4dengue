@@ -1,5 +1,10 @@
 # DengueIt
 
+### Team Member ###
+1. Chua Yu Cong, Joel
+2. Ho Yuan Yi
+3. Lee Jia Ming
+
 ### 1. Installation
 ```$ git clone https://github.com/hoyuanyi/hci4dengue.git```
 
