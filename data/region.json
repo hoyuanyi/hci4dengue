@@ -1,0 +1,31 @@
+[ 
+  {
+    "reg": "Central",
+    "amt" : 104,
+    "subData" : [{"name" : "Fountain" , "value" : 1}]
+  },
+  {
+    "region": "North",
+    "litres": 8,
+    "amt" : 0,
+    "subData" : [{"name": "NIL", "value": 1}]
+  }, 
+  {
+    "region": "North-East",
+    "litres": 148,
+    "amt" : 0,
+    "subData" : [{"name" : "Container" , "value" : 2 }, {"name" : "Toilet" , "value" : 2},{"name" : "Flower Vase/Pot" , "value" : 2} , {"name" : "Public Drain" , "value" : 3},{"name" : "Water Valve" , "value" : 0}, {"name" : "Plants" , "value" : 2},{"name" : "Gully Trap" , "value" : 2},{"name" : "Discarded Receptacles" , "value" : 1}]
+  }, 
+  {
+    "region": "East",
+    "litres": 344,
+    "amt" : 0,
+    "subData" : [{"name" : "Container" , "value" : 15 }, {"name" : "Toilet" , "value" : 2},{"name" : "Flower Vase/Pot" , "value" : 9} , {"name" : "Public Drain" , "value" : 3}, {"name" : "Plants" , "value" : 3 },{"name" : "Gully Trap" , "value" : 3},{"name" : "Water Valve" , "value" : 1},{"name" : "Discarded Receptacles" , "value" : 2} , {"name" : "Fountain", "value" : 2 }]
+  }, 
+  {
+    "region": "West",
+    "litres": 222,
+    "amt" : 0,
+    "subData" : [{"name" : "Container" , "value" : 2 }, {"name" : "Flower Vase/Pot" , "value" : 1} , {"name" : "Public Drain" , "value" : 2},{"name" : "Fountain", "value" : 1 }, {"name" : "Plants" , "value" : 1},{"name" : "Gully Trap" , "value" : 2},{"name" : "Discarded Receptacles" , "value" : 1}]
+  }
+]

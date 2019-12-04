@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="./bootstrap/favicon.ico">
+
+    <title>DengueIt</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="./bootstrap/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./css/index.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="./bootstrap/ie-emulation-modes-warning.js"></script>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+
+    <script src="./js/app.js"></script>
+    <script src="./js/BoundaryCanvas.js"></script>
+
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/charts.js"></script>
+    <script src="https://www.amcharts.com/lib/4/themes/animated.js"></script>    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html">DengueIt</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="./index.html">Home</a></li>
+            <li><a href="./graph.html">Analysis</a></li>
+            <!-- <li><a href="./abtesting.html">A/B Test</a></li> -->
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <div class="starter-template">
+        <div id="mapid"></div>
+
+        <div class="inputs" id="types">
+          <input type="checkbox" class="types" name="kml" value="kml" checked="true">
+          <label for="Dengue">Dengue</label>
+          <input type="checkbox" class="types" value="lol" checked="true">
+          <label for="Zika">Zika</label>
+        </div>
+
+        <div class="inputs form-check form-check-inline" id="habitats">
+          <input class="habitats form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio4" value="All" checked>
+          <label class="form-check-label" for="inlineRadio4"> All</label>
+          <input class="habitats form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="Home">
+          <label class="haform-check-label" for="inlineRadio1"> Home</label>
+          <input class="habitats form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="PublicArea">
+          <label class="form-check-label" for="inlineRadio2"> Public Places</label>
+          <input class="habitats form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="ConstructionSites">
+          <label class="form-check-label" for="inlineRadio3"> Construction Sites</label>
+        </div>
+      </div>
+
+      <div class="tablepaddingdiv">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col"><center>Definition</center></th>
+              <th scope="col"><center>Alert</center></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>High-risk area with 10 or more cases</td>
+              <td style='color: red'>Red</td>
+            </tr>
+            <tr>
+              <td>High-risk area with 5 or more cases and less than 10 cases</td>
+              <td style='color: green'>Green</td>
+            </tr>
+            <tr>
+              <td>High-risk area with less than 5 cases</td>
+              <td style='color: blue'>Blue</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="./bootstrap/jquery.min.js"><\/script>')</script>
+    <script src="./bootstrap/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="./bootstrap/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
